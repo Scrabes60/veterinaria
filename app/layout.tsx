@@ -1,3 +1,5 @@
+import './globals.css'
+
 export const metadata = {
   title: "VetCRM",
   description: "Sistema de gestión veterinaria",
