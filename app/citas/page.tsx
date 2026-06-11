@@ -28,6 +28,7 @@ export default function CitasPage() {
     date: new Date().toISOString().split("T")[0],
     time: "09:00",
     type: "consulta",
+    status: "pendiente",
     reason: "",
     price: "",
     duration: "30",
@@ -47,7 +48,7 @@ export default function CitasPage() {
     e.preventDefault();
     addAppointment(form);
     setShowForm(false);
-    setForm({ clientId: "", petId: "", date: new Date().toISOString().split("T")[0], time: "09:00", type: "consulta", reason: "", price: "", duration: "30" });
+    setForm({ clientId: "", petId: "", date: new Date().toISOString().split("T")[0], time: "09:00", type: "consulta", status: "pendiente", reason: "", price: "", duration: "30" });
     loadAppointments();
   };
 
